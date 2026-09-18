@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>RM — EST 2033 | Karimnagar</title>
+<meta name="description" content="RM Restaurant, Karimnagar — an experience beyond the plate. Fine dining, elegant hospitality, unforgettable evenings.">
+<link rel="icon" href="data:,">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<!-- ============ NAVIGATION ============ -->
+<nav class="nav">
+  <a href="#home" class="nav-logo" aria-label="RM Restaurant home">
+    <span class="mark">RM</span>
+    <span class="est">EST 2033</span>
+  </a>
+
+  <div class="nav-overlay"></div>
+
+  <div class="nav-links">
+    <a href="#home">HOME</a>
+    <a href="#menu">MENU</a>
+    <a href="#about">ABOUT</a>
+    <a href="#reservations">RESERVATIONS</a>
+    <a href="#gallery">GALLERY</a>
+    <a href="#contact">CONTACT</a>
+    <a href="#reservations" class="btn btn-solid mobile-cta">RESERVE A TABLE</a>
+  </div>
+
+  <a href="#reservations" class="btn nav-cta">RESERVE A TABLE</a>
+
+  <button class="hamburger" aria-label="Open menu" aria-expanded="false">
+    <span></span><span></span><span></span>
+  </button>
+</nav>
+
+<!-- ============ HERO ============ -->
+<header id="home" class="hero">
+  <div class="hero-frame"></div>
+  <div class="hero-inner">
+    <div class="hero-mark">RM</div>
+    <div class="hero-est">EST 2033</div>
+    <div class="hero-divider"></div>
+    <h1 class="hero-headline" data-cfg="hero.headline">AN EXPERIENCE BEYOND THE PLATE</h1>
+    <p class="hero-sub" data-cfg="hero.subtext">Where exceptional flavours meet timeless elegance.</p>
+    <div class="hero-actions">
+      <a href="#menu" class="btn btn-solid">VIEW MENU</a>
+      <a href="#reservations" class="btn">RESERVE A TABLE</a>
+    </div>
+  </div>
+  <div class="hero-scroll"></div>
+</header>
+
+<!-- ============ MENU ============ -->
+<section id="menu" class="section">
+  <div class="container">
+    <div class="heading-block reveal">
+      <h2>MENU</h2>
+      <div class="heading-rule">
+        <span class="ornament"></span>
+      </div>
+    </div>
+
+    <div class="menu-columns reveal" id="menuColumns">
+      <!-- Rendered from menu.js -->
+    </div>
+  </div>
+</section>
+
+<!-- ============ ABOUT ============ -->
+<section id="about" class="section section-alt">
+  <div class="container">
+    <div class="about-grid">
+      <div class="about-image reveal">
+        <span class="about-image-label">Replace this panel with a photo of your restaurant</span>
+      </div>
+      <div class="about-copy reveal">
+        <div class="heading-block">
+          <h2 data-cfg="about.heading">OUR STORY</h2>
+          <div class="heading-rule"></div>
+        </div>
+        <p data-cfg="about.paragraph">Created with a passion for exceptional food, thoughtful hospitality and memorable dining experiences.</p>
+        <span class="editable-tag">EDITABLE — edit in config.js</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ RESERVATIONS ============ -->
+<section id="reservations" class="section">
+  <div class="container">
+    <div class="heading-block reveal">
+      <h2>RESERVATIONS</h2>
+      <div class="heading-rule">
+        <span class="ornament"></span>
+      </div>
+    </div>
+
+    <div class="reserve-wrap reveal">
+      <form id="reservationForm" class="form-grid">
+        <div class="field">
+          <label for="name">Name</label>
+          <input id="name" name="name" type="text" placeholder="Your full name" required>
+        </div>
+        <div class="field">
+          <label for="phone">Phone</label>
+          <input id="phone" name="phone" type="tel" placeholder="Your phone number" required>
+        </div>
+        <div class="field">
+          <label for="guests">Number of Guests</label>
+          <input id="guests" name="guests" type="number" min="1" placeholder="e.g. 2" required>
+        </div>
+        <div class="field">
+          <label for="date">Date</label>
+          <input id="date" name="date" type="date" required>
+        </div>
+        <div class="field full">
+          <label for="time">Preferred Time</label>
+          <input id="time" name="time" type="time" required>
+        </div>
+        <div class="field full">
+          <label for="request">Special Request</label>
+          <textarea id="request" name="request" placeholder="Anniversary, allergies, seating preference…"></textarea>
+        </div>
+        <button type="submit" class="btn btn-solid reserve-submit">REQUEST A RESERVATION</button>
+      </form>
+    </div>
+  </div>
+</section>
+
+<!-- ============ GALLERY ============ -->
+<section id="gallery" class="section section-alt">
+  <div class="container">
+    <div class="heading-block reveal">
+      <h2>GALLERY</h2>
+      <div class="heading-rule">
+        <span class="ornament"></span>
+      </div>
+    </div>
+
+    <div class="gallery-filters reveal">
+      <button class="filter-btn active" data-filter="ALL">ALL</button>
+      <button class="filter-btn" data-filter="FOOD">FOOD</button>
+      <button class="filter-btn" data-filter="INTERIOR">INTERIOR</button>
+      <button class="filter-btn" data-filter="AMBIENCE">AMBIENCE</button>
+      <button class="filter-btn" data-filter="DESSERTS">DESSERTS</button>
+    </div>
+
+    <div class="gallery-grid reveal">
+      <div class="gallery-item" data-category="FOOD"><span>FOOD</span></div>
+      <div class="gallery-item" data-category="INTERIOR"><span>INTERIOR</span></div>
+      <div class="gallery-item" data-category="AMBIENCE"><span>AMBIENCE</span></div>
+      <div class="gallery-item" data-category="DESSERTS"><span>DESSERTS</span></div>
+      <div class="gallery-item" data-category="FOOD"><span>FOOD</span></div>
+      <div class="gallery-item" data-category="INTERIOR"><span>INTERIOR</span></div>
+      <div class="gallery-item" data-category="AMBIENCE"><span>AMBIENCE</span></div>
+      <div class="gallery-item" data-category="DESSERTS"><span>DESSERTS</span></div>
+    </div>
+    <p style="text-align:center; margin-top:24px; font-size:0.78rem; color:var(--secondary); letter-spacing:0.04em;">
+      Replace these placeholder tiles with your own photos — see the README for how.
+    </p>
+  </div>
+</section>
+
+<!-- ============ CONTACT ============ -->
+<section id="contact" class="section">
+  <div class="container">
+    <div class="heading-block reveal">
+      <h2>CONTACT</h2>
+      <div class="heading-rule">
+        <span class="ornament"></span>
+      </div>
+    </div>
+
+    <div class="contact-grid reveal">
+      <div class="contact-block contact-center">
+        <div class="mark">RM</div>
+        <div class="est">EST 2033</div>
+      </div>
+
+      <div class="contact-block contact-center">
+        <h3>REACH US</h3>
+        <a data-cfg-href="tel" data-cfg="phone">+91 63002 73447</a>
+        <p data-cfg="location">Telangana, Karimnagar</p>
+      </div>
+
+      <div class="contact-block contact-center">
+        <h3>FOLLOW &amp; MESSAGE</h3>
+        <div class="social-row">
+          <a data-cfg-href="whatsapp" aria-label="WhatsApp" target="_blank" rel="noopener">
+            <svg viewBox="0 0 24 24" fill="none" stroke-width="1.5"><path d="M12 2a10 10 0 0 0-8.5 15.3L2 22l4.9-1.4A10 10 0 1 0 12 2Z" stroke-linecap="round" stroke-linejoin="round"/><path d="M8.5 8.7c.2-.5.4-.5.6-.5h.5c.2 0 .4 0 .5.4.2.5.6 1.6.6 1.7.1.1.1.3 0 .4-.6 1.1-.9 1-.4 1.7.6.9 1.4 1.4 2.1 1.7.3.1.4.1.6-.1.2-.2.7-.8.9-1.1.2-.2.4-.2.6-.1.2.1 1.5.7 1.8.9.2.1.4.2.4.3 0 .5-.2 1.1-.6 1.5-.4.4-1.1.7-1.9.6-1.6-.2-3.3-1-4.6-2.3-1.1-1.1-1.9-2.3-2.2-3.1-.2-.6-.1-1.1.1-1.5Z"/></svg>
+          </a>
+          <a data-cfg-href="instagram" aria-label="Instagram" target="_blank" rel="noopener">
+            <svg viewBox="0 0 24 24" fill="none" stroke-width="1.5"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.2" cy="6.8" r="0.6" fill="currentColor" stroke="none"/></svg>
+          </a>
+          <a data-cfg-href="email" aria-label="Email">
+            <svg viewBox="0 0 24 24" fill="none" stroke-width="1.5"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m4 7 8 6 8-6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ FOOTER ============ -->
+<footer class="footer">
+  <div class="footer-grid">
+    <div class="footer-brand">
+      <div class="mark">RM</div>
+      <div class="est">EST 2033</div>
+    </div>
+
+    <div>
+      <h4>QUICK LINKS</h4>
+      <div class="footer-links">
+        <a href="#home">HOME</a>
+        <a href="#menu">MENU</a>
+        <a href="#about">ABOUT</a>
+        <a href="#reservations">RESERVATIONS</a>
+        <a href="#gallery">GALLERY</a>
+        <a href="#contact">CONTACT</a>
+      </div>
+    </div>
+
+    <div class="footer-contact">
+      <h4>CONTACT</h4>
+      <p data-cfg="phone">+91 63002 73447</p>
+      <p data-cfg="location">Telangana, Karimnagar</p>
+    </div>
+  </div>
+
+  <div class="footer-bottom">
+    © <span id="copyrightYear">2033</span> RM. All Rights Reserved.
+  </div>
+</footer>
+
+<!-- ============ FLOATING WHATSAPP ============ -->
+<a class="whatsapp-float" data-cfg-href="whatsapp" target="_blank" rel="noopener" aria-label="Message us on WhatsApp">
+  <svg viewBox="0 0 24 24"><path d="M12 2a10 10 0 0 0-8.5 15.3L2 22l4.9-1.4A10 10 0 1 0 12 2Zm0 2a8 8 0 1 1-4.3 14.8l-.3-.2-2.9.8.8-2.8-.2-.3A8 8 0 0 1 12 4Zm-3.3 3.5c-.2.5-.3.5-.5 1.5-.2 1 .5 2.9 2.6 4.9 2.1 2 3.9 2.4 4.9 2.2 1-.2 1-.3 1.5-.5.5-.2.9-1.2.6-1.6-.2-.4-1.6-1.1-1.9-1.2-.3-.1-.5-.1-.7.1-.2.3-.7.9-.9 1.1-.2.2-.4.2-.7.1-.3-.2-1.3-.5-2.4-1.5-.9-.8-1.5-1.9-1.7-2.2-.2-.3 0-.5.1-.7.1-.1.3-.4.4-.5.1-.2.2-.3.3-.5.1-.2 0-.4 0-.6-.1-.2-.7-1.7-1-2.3-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.7.3Z"/></svg>
+</a>
+
+<!-- ============ TOAST ============ -->
+<div id="toast" class="toast"></div>
+
+<script src="js/config.js"></script>
+<script src="js/menu.js"></script>
+<script src="js/script.js"></script>
+</body>
+</html>
